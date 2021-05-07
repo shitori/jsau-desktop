@@ -1,0 +1,22 @@
+{
+  "name": "jsau-desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "posttest": "npm run lint",
+    "start": "node index.js",
+    "lint:fix": "eslint --fix .",
+    "lint": "npm run info && eslint .",
+    "info": "node -e 'require(\"package\").usage()'"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "7.21.0",
+    "eslint-config-usecases": "3.1.0",
+    "node-os-utils": "1.3.5",
+    "package": "git+https://github.com/shitori/package.git"
+  }
+}
